@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+.box {
+  width: 300px;
+  height: 470px;
+  background-color: #E63946;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
+}
+.box > h1 {
+  color: white;
+  margin: 20px 0;
+}
+.display {
+  width: 90%;
+  height: 50px;
+  background-color: rgb(171, 209, 175);
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  color: black;
+  text-align: end;
+}
+.buttons-box {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+}
+.buttons-box input {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.buttons-box input:nth-child(2)::placeholder {
+  color: red;
+}
+.buttons-box input:nth-child(16) {
+  height: 110px;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-end: 5;
+}
+.buttons-box input:nth-child(17) {
+  width: 120px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
