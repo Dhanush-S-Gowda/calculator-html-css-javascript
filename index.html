@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Calculator</h1>
+      <div class="inner">
+        <input class="display"></input>
+        <div class="buttons-box">
+          <input type="button" id="del" value="del" title="delete" onclick="display.value =  String(display.value).slice(0, -1);"></input>
+          <input type="button" id="pow" value="^" onclick="display.value += '**';"></input>
+          <input type="button" id="div" value="/" onclick="display.value += '/';"></input>
+          <input type="button" id="mul" value="*" onclick="display.value += '*';"></input>
+          <input type="button" id="n7" value="7" onclick="display.value += '7';"></input>
+          <input type="button" id="n8" value="8" onclick="display.value += '8';"></input>
+          <input type="button" id="n9" value="9" onclick="display.value += '9';"></input>
+          <input type="button" id="sub" value="-" onclick="display.value += '-';"></input>
+          <input type="button" id="n4" value="4" onclick="display.value += '4';"></input>
+          <input type="button" id="n5" value="5" onclick="display.value += '5';"></input>
+          <input type="button" id="n6" value="6" onclick="display.value += '6';"></input>
+          <input type="button" id="add" value="+" onclick="display.value += '+';"></input>
+          <input type="button" id="n1" value="1" onclick="display.value += '1';"></input>
+          <input type="button" id="n2" value="2" onclick="display.value += '2';"></input>
+          <input type="button" id="n3" value="3" onclick="display.value += '3';"></input>
+          <input type="button" id="enter" value="enter" onclick="display.value = eval(display.value);"></input>
+          <input type="button" id="n0" value="0" onclick="display.value += '0';"></input>
+          <input type="button" id="dec" value="." onclick="display.value += '.';"></input>
+        </div>
+      </div>
+    </div>
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+          alert("Welcome to Calculator, you can either use the buttons or type in the editor")
+        });
+          const display = document.body.querySelector(".display");
+          document.body.addEventListener("keydown", (e)=>{
+               if(e.key === 'Enter'){
+                    display.value = eval(display.value);
+               }
+          })
+    </script>
+  </body>
+</html>
