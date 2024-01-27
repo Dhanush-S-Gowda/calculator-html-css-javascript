@@ -1,6 +1,6 @@
 # Calculator Website
 
-Welcome to the Calculator website! This is a simple web application that allows users to perform basic arithmetic operations using both on-screen buttons and direct keyboard input.
+Welcome to the Calculator website! This is a simple yet aesthetic web application that allows users to perform basic arithmetic operations using both on-screen buttons and direct keyboard input.
 
 <br>Check here - https://dhanush-s-gowda.github.io/calculator-html-css-javascript/
 
